@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Carousel } from 'react-bootstrap';
 
 function About() {
@@ -8,7 +9,7 @@ function About() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/assets/aboutme/portrait.png"
+                        src={process.env.PUBLIC_URL + '/assets/aboutme/portrait.png'}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -19,7 +20,7 @@ function About() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/assets/aboutme/portrait.png"
+                        src={process.env.PUBLIC_URL + '/assets/aboutme/portrait.png'}
                         alt="Second slide"
                     />
 
@@ -31,7 +32,7 @@ function About() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/assets/aboutme/portrait.png"
+                        src={process.env.PUBLIC_URL + '/assets/aboutme/portrait.png'}
                         alt="Third slide"
                     />
 
