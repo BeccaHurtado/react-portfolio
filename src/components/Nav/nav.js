@@ -1,11 +1,20 @@
-function Nav() {
+import { Navbar, Container, Nav } from 'react-bootstrap';
+function Navigation() {
     return (
-        <div>
-            <a href="#about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo consequatur vitae voluptate nemo inventore modi aut non libero repellendus dolorem iusto, obcaecati molestias quos neque. Velit itaque quas harum asperiores.</a>
-        </div>
+        <Navbar bg="dark" variant="dark">
+            <Container>
+                <Navbar.Brand href="/">Becca</Navbar.Brand>
+                <Nav className="me-auto">
+                    <Nav.Link href="/">About me</Nav.Link>
+                    <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+                    <Nav.Link href="/resume">Resume</Nav.Link>
+                    <Nav.Link href="/contact">Contact</Nav.Link>
+                </Nav>
+            </Container>
+        </Navbar>
     )
-} 
+}
 
-export default Nav;
+export default Navigation;
 
 

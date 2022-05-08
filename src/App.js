@@ -1,10 +1,10 @@
 import React from 'react'
-import Nav from './components/Nav'
+import Navigation from './components/Nav/nav'
 
 function App() {
   return (
     <div className="App">
-      <Nav></Nav>
+      <Navigation></Navigation>
       <main>
       </main>
       <footer></footer>
