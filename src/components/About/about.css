@@ -1,7 +1,7 @@
-:root {
+/* :root {
     --dark-grey: #80ed99;
     --light-purple: #f4f3ee;
-}
+} */
 
 .header {
     display: grid;
@@ -9,10 +9,19 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, var(--dark-grey), var(--light-purple));
+    background: url('./geo-background.png');
 }
 
 img {
-    width: 20rem;
+    width: 19rem;
     border-radius: 50%;
+}
+
+i {
+    color: aliceblue;
+    padding: 1.15em;
+}
+
+.school {
+    color: #E98665;
 }
