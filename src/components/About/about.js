@@ -2,7 +2,6 @@ import React from 'react'
 import './about.css'
 import portrait from './portrait.png'
 import { Container, Row, Col } from 'react-bootstrap';
-import {Figure} from 'react-bootstrap'
 
 function About() {
     return (
@@ -13,18 +12,12 @@ function About() {
                 </Row>
                 <Row>
                     <Col>
-                    <Figure>
-                        <Figure.Image
-                            alt="171x180"
+                        <img
                             src={portrait}
+                            className='img-fluid shadow-lg'
+                            alt=''
+                            style={{ maxWidth: '24rem' }}
                         />
-                        <Figure.Caption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus quisquam ab a voluptate iste velit nemo reiciendis. Commodi optio aliquam nostrum maiores quam ut perspiciatis! Autem hic error minus.
-                        </Figure.Caption>
-                    </Figure> 
-                    </Col>
-                    <Col>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur facere accusantium reiciendis voluptatibus suscipit, recusandae nesciunt illo sint mollitia a iure deserunt consequatur similique. Exercitationem, soluta, qui doloribus, distinctio recusandae expedita hic repellendus magnam similique quo deleniti culpa saepe ex unde nam molestiae eaque sed velit fuga debitis consequatur quam.
                     </Col>
                 </Row>
             </Container>

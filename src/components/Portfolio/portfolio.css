@@ -3,11 +3,21 @@
     --light-purple: #f2e9e4;
 }
 
-.header {
+.main {
     /* display: grid; */
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, var(--dark-grey), var(--light-purple));
+}
+
+.dashboard {
+    width: 10rem;
+}
+
+span {
+    border: 1px solid silver;
+    border-radius: 0.25em;
+    padding: 0.5em;
 }

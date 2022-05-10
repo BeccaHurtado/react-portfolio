@@ -1,18 +1,18 @@
 :root {
-    --dark-grey: #c9ada7;
-    --light-purple: #f2e9e4;
+    --dark-grey: #80ed99;
+    --light-purple: #f4f3ee;
 }
 
 .header {
-    /* display: grid; */
-    justify-content: flex-start;
+    display: grid;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, var(--dark-grey), var(--light-purple));
 }
 
-.header Figure {
-    padding-bottom: 2rem;
-    width: 30rem;
+img {
+    width: 20rem;
+    border-radius: 50%;
 }
