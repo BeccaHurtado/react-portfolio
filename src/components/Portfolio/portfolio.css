@@ -1,7 +1,3 @@
-:root {
-    --dark-grey: #c9ada7;
-    --light-purple: #f2e9e4;
-}
 
 .main {
     /* display: grid; */
@@ -9,15 +5,31 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, var(--dark-grey), var(--light-purple));
+    background: url('./geo-background.png');
 }
 
-.dashboard {
+/* .dashboard {
     width: 10rem;
-}
+} */
 
 span {
     border: 1px solid silver;
     border-radius: 0.25em;
     padding: 0.5em;
+}
+
+.moveies {
+    height: 11rem;
+}
+
+.team {
+    height: 12rem;
+}
+
+.weather {
+    height: 12rem;
+}
+
+.workday {
+    height: 12rem;
 }
