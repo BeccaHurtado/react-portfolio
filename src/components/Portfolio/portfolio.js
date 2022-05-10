@@ -1,9 +1,12 @@
 import React from "react";
+import './portfolio.css'
 
 function Portfolio(){
-    return(<section className="contianer">
+    return(
+    <div className="header">
         <h3 className="subheading">Portfolio</h3>
-    </section>)
+    </div>
+    )
 }
 
 

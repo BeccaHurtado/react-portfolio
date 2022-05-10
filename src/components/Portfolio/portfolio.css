@@ -1,0 +1,13 @@
+:root {
+    --dark-grey: #c9ada7;
+    --light-purple: #f2e9e4;
+}
+
+.header {
+    /* display: grid; */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--dark-grey), var(--light-purple));
+}
