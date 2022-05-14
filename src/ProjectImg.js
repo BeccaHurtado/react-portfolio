@@ -3,7 +3,7 @@ import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 function ProjectImages(props) {
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} className="card-container">
         <Card.Img variant="top" src={props.portfolioArray.img} />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>

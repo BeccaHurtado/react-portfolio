@@ -12,27 +12,27 @@ function Portfolio() {
         {
             name: 'Dashboard',
             github: '',
-            img: './images/dashboard.png'
+            img: './images/javascript-quiz.jpeg'
         },
         {
             name: 'Dashboard',
             github: '',
-            img: './images/dashboard.png'
+            img: './images/moveies.png'
         },
         {
             name: 'Dashboard',
             github: '',
-            img: './images/dashboard.png'
+            img: './images/team-portfolio.png'
         },
         {
             name: 'Dashboard',
             github: '',
-            img: './images/dashboard.png'
+            img: './images/weather-dashboard.png'
         },
         {
             name: 'Dashboard',
             github: '',
-            img: './images/dashboard.png'
+            img: './images/workday-scheduler.jpeg'
         },
     ]
     return (
