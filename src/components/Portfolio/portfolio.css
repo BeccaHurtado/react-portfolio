@@ -12,6 +12,9 @@
     width: 10rem;
 } */
 
+h1, .github {
+    color: #E98665;
+}
 span {
     border: 1px solid silver;
     border-radius: 0.25em;
@@ -32,4 +35,16 @@ span {
 
 .workday {
     height: 12rem;
+}
+
+.dashboard, .javaQuiz, .moveies, .team, .weather, .workday {
+    -webkit-filter: blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.dashboard:hover, .javaQuiz:hover, .moveies:hover, .team:hover, .weather:hover, .workday:hover {
+    -webkit-filter: blur(2px);
+	filter: blur(2px);
 }
