@@ -12,7 +12,7 @@
     background: url('./geo-background.png');
 }
 
-img {
+.author {
     width: 19rem;
     border-radius: 50%;
 }

@@ -1,50 +1,20 @@
 
-.main {
+.portfolio-background {
     /* display: grid; */
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: url('./geo-background.png');
+    background-color: #7d3413;
 }
 
-/* .dashboard {
-    width: 10rem;
-} */
-
-h1, .github {
-    color: #E98665;
-}
-span {
-    border: 1px solid silver;
-    border-radius: 0.25em;
-    padding: 0.5em;
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.moveies {
-    height: 11rem;
+.card-container, .card-body {
+    margin: 10px
 }
 
-.team {
-    height: 12rem;
-}
-
-.weather {
-    height: 12rem;
-}
-
-.workday {
-    height: 12rem;
-}
-
-.dashboard, .javaQuiz, .moveies, .team, .weather, .workday {
-    -webkit-filter: blur(0);
-    filter: grayscale(0) blur(0);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-}
-
-.dashboard:hover, .javaQuiz:hover, .moveies:hover, .team:hover, .weather:hover, .workday:hover {
-    -webkit-filter: blur(2px);
-	filter: blur(2px);
-}

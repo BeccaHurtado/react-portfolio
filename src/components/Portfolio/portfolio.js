@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectImages from '../../ProjectImg';
+import './portfolio.css'
 
 
 function Portfolio() {
@@ -36,14 +37,13 @@ function Portfolio() {
         },
     ]
     return (
-        <section>
-            <div>
-            <h1 className="header">My Portfolio</h1>
-            <div>
+        <section className="portfolio-background">
+            <h1>My Recent Work</h1>
+            <h2>Portfolio</h2>
+            <div className="container portfolio-container">
                 {portfolioArray.map(entry => {
                     return (<ProjectImages portfolioArray={entry}></ProjectImages>)
                 })}
-            </div>
             </div>
         </section>
     )
