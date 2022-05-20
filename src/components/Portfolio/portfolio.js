@@ -1,101 +1,78 @@
 // import React from "react";
-import ProjectImages from '../../ProjectImg';
-// import './portfolio.css'
-
-
-// function Portfolio() {
-//     const portfolioArray = [
-//         {
-//             name: 'Dashboard',
-//             github: 'abd',
-//             img: './images/dashboard.png'
-//         },
-//         {
-//             name: 'Dashboard',
-//             github: '',
-//             img: './images/javascript-quiz.jpeg'
-//         },
-//         {
-//             name: 'Dashboard',
-//             github: '',
-//             img: './images/moveies.png'
-//         },
-//         {
-//             name: 'Dashboard',
-//             github: '',
-//             img: './images/team-portfolio.png'
-//         },
-//         {
-//             name: 'Dashboard',
-//             github: '',
-//             img: './images/weather-dashboard.png'
-//         },
-//         {
-//             name: 'Dashboard',
-//             github: '',
-//             img: './images/workday-scheduler.jpeg'
-//         },
-//     ]
-//     return (
-//         <section className="portfolio-background">
-//             <h1>My Recent Work</h1>
-//             <h2>Portfolio</h2>
-//             <div className="container portfolio-container">
-//                 {portfolioArray.map(entry => {
-//                     return (<ProjectImages portfolioArray={entry}></ProjectImages>)
-//                 })}
-//             </div>
-//         </section>
-//     )
-// }
-// export default Portfolio;
-
+// import ProjectImages from '../../ProjectImg';
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import { Typography, Container, Grid, Card, CardMedia, CardContent, CardActions, Button, Box } from '@mui/material'
+
 
 export default function About() {
-    const portfolioArray = [
-                {
-                    name: 'Dashboard',
-                    github: 'abd',
-                    img: './images/dashboard.png'
-                },
-                {
-                    name: 'Dashboard',
-                    github: '',
-                    img: './images/javascript-quiz.jpeg'
-                },
-                {
-                    name: 'Dashboard',
-                    github: '',
-                    img: './images/moveies.png'
-                },
-                {
-                    name: 'Dashboard',
-                    github: '',
-                    img: './images/team-portfolio.png'
-                },
-                {
-                    name: 'Dashboard',
-                    github: '',
-                    img: './images/weather-dashboard.png'
-                },
-                {
-                    name: 'Dashboard',
-                    github: '',
-                    img: './images/workday-scheduler.jpeg'
-                },
-            ]
-  return (
-    <div>
-        {portfolioArray.map(entry => {
-            return (<ProjectImages portfolioArray={entry}></ProjectImages>)
-    })}
-    </div>
-    
-  );
+    const itemData = [
+        {
+            title: 'Dashboard',
+            github: 'abd',
+            author: 'becca',
+            description: 'lorem10',
+            img: './images/dashboard.png'
+        },
+        {
+            title: 'Dashboard',
+            github: '',
+            author: '',
+            img: './images/javascript-quiz.jpeg'
+        },
+        {
+            title: 'Dashboard',
+            github: '',
+            author: '',
+            img: './images/moveies.png'
+        },
+        {
+            title: 'Dashboard',
+            github: '',
+            author: '',
+            img: './images/team-portfolio.png'
+        },
+        {
+            title: 'Dashboard',
+            github: '',
+            author: '',
+            img: './images/weather-dashboard.png'
+        },
+        {
+            title: 'Dashboard',
+            github: '',
+            author: '',
+            img: './images/workday-scheduler.jpeg'
+        },
+    ]
+
+    return (
+        <Box xs={{ flexGrow: 1 }}>
+            <Grid container columns={{ xs: 1, sm: 2, md: 3 }}>
+                <Grid item xs={2} sm={4} md={4}>
+                    <ImageList sx={{ width: 900, height: 550 }} cols={2} gap={8}>
+                        {itemData.map((item) => (
+                            <ImageListItem>
+                                <img
+                                    src={`${item.img}`}
+                                    srcSet={`${item.img}`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                                <ImageListItemBar
+                                    title={item.title}
+                                    subtitle={<span>by: {item.author}</span>}
+                                    position="below"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                </Grid>
+            </Grid>
+        </Box>
+
+    );
 }
+
