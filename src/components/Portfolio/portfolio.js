@@ -50,14 +50,14 @@ export default function About() {
 
     return (
         <Box xs={{ flexGrow: 1 }}>
-            <Grid container columns={{ xs: 1, sm: 2, md: 3 }}>
-                <Grid item xs={2} sm={4} md={4}>
-                    <ImageList sx={{ width: 900, height: 550 }} cols={2} gap={8}>
+            <Grid container direction="column" alignItems="center" justifyContent="center">
+                <Grid item xs={1} sm={2} md={6} lg={12}>
+                    <ImageList sx={{ width: 900, height: 600 }} cols={2} gap={8}>
                         {itemData.map((item) => (
                             <ImageListItem>
                                 <img
-                                    src={`${item.img}`}
-                                    srcSet={`${item.img}`}
+                                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                     alt={item.title}
                                     loading="lazy"
                                 />
@@ -72,7 +72,6 @@ export default function About() {
                 </Grid>
             </Grid>
         </Box>
-
     );
 }
 
