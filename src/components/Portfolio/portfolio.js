@@ -2,7 +2,12 @@
 import * as React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Grid, Card, IconButton, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material'
+import { red } from '@mui/material/colors'
+import './portfolio.css'
 
+const redd = red[200]
+const darkRed = red[300]
+const buttonRed = red.A400
 
 export default function Portfolio() {
     const itemData = [
@@ -52,10 +57,10 @@ export default function Portfolio() {
 
     return (
         <div>
-            <Typography variant="h2" align="center">My Portfolio</Typography>
-            <Grid container alignItems="center" justifyContent="center" columns={16} spacing={2}>
+            <Typography variant="h2" align="center" sx={{color: darkRed}} className="portfolio">My Portfolio</Typography>
+            <Grid container alignItems="center" justifyContent="center" columns={16} spacing={2} className="cards">
                     {itemData.map((item) => (
-                <Grid item  key={item}>
+                <Grid item  key={item} >
                     <itemData>
                         <Card sx={{ maxWidth: 345 }}>
                          
@@ -66,17 +71,17 @@ export default function Portfolio() {
                                     alt="green iguana"
                                 />
                                 <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
+                                    <Typography gutterBottom variant="h5" component="div" sx={{color: darkRed}}>
                                         {item.title}
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography variant="body2" sx={{color: redd}}>
                                         {item.description}
                                     </Typography>
                                 </CardContent>
                          
-                            <CardActions>
-                                <a href={item.github}>
-                                <Button size="small" color="primary">
+                            <CardActions sx={{color: darkRed}}>
+                                <a href={item.github} >
+                                <Button size="small" sx={{color:buttonRed}}>
                                     Github
                                 </Button>
                                 </a>
